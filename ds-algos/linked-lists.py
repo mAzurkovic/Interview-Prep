@@ -3,7 +3,6 @@ class Node:
         self.value = value
         self.next = next
 
-
 # Wrapper class that holds Linked List functions
 class LinkedList:
     def __init__(self, head):
@@ -19,7 +18,6 @@ class LinkedList:
                 break
             else:
                 current = current.next
-        
 
     # Add values from a list
     def appendList(self, values):
@@ -36,7 +34,6 @@ class LinkedList:
                 break
             else:
                 current = current.next
-
 
 head = Node(5, None)
 
