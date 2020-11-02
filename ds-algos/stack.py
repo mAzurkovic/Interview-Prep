@@ -23,9 +23,12 @@ class Stack:
     def length(self):
         return len(self.stack)
 
+    def printStack(self):
+        for i in self.stack:
+            print(i)
 
 stack = Stack()
 stack.push(1)
 stack.push(10)
 print(stack.peek())
-print(stack.length())
+print(stack.printStack())
