@@ -4,7 +4,7 @@ def recReverse(s, left, right):
     else:
         left += 1
         right -= 1
-        return recReverse(s[left:right], left, right)
+        recReverse(s[left:right], left, right)
 
 def reverseString(s) -> None:
     recReverse(s, 0, len(s) - 1)
