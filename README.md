@@ -13,3 +13,11 @@
 - [ ] Sorting
 - [ ] Python collections
 - [ ] Stacks/Queues
+
+
+## Interviews so far (2020)
+- Microsoft phone screen
+- Unity assesment
+- Snowflake assesment
+- Neurio phone screen
+
