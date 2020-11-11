@@ -16,8 +16,8 @@
 
 
 ## Interviews so far (2020)
-- Microsoft phone screen
-- Unity assesment
-- Snowflake assesment
-- Neurio phone screen
-
+- Microsoft Software Engineer, phone screen
+- Unity Software Engineer, assessment
+- Snowflake Software Engineer, assessment
+- Neurio Firmware Engineer, phone screen
+- Splunk ML Software Engineer, phone screen
