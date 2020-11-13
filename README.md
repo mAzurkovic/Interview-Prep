@@ -21,3 +21,5 @@
 - Snowflake Software Engineer, assessment
 - Neurio Firmware Engineer, phone screen
 - Splunk ML Software Engineer, phone screen
+- Microsoft Software Engineer, final interview
+- Amazon Software Engineer, assesment
