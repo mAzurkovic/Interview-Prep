@@ -81,7 +81,7 @@ def dfsStack(node, target):
             # Add it to the hashset
             seen.add(current)
         
-        # Check the children, if not binary tree and n-art tree, iterate through dynamically
+        # Check the children, if not binary tree and n-ary tree, iterate through dynamically
         # Make sure its not null and not seen before
         if (current.left is not None and current.left not in seen):
             stack.append(current.left)
@@ -89,8 +89,6 @@ def dfsStack(node, target):
             stack.append(current.right)
     
     return -1
-
-
 
 
 seen = set()
@@ -103,6 +101,32 @@ def dfs(node, target):
         dfs(node.right, target)
     else:
         return -1  
+
+# This is BFS on a binary tree
+def bfsStack(node, target):
+    seen = set() 
+    queue = deque()
+    queue.append(node)
+
+    while (len(queue) != 0):
+        # Set the current proccesing node, dequeue the data structure
+        current = queue.popleft()
+
+        # If not seen, proccess it
+        if (current not in seen):
+            if (current.value == target):
+                return current
+            # Add it to the hashset
+            seen.add(current)
+        
+        # Check the children, if not binary tree and n-ary tree, iterate through dynamically
+        # Make sure its not null and not seen before
+        if (current.left is not None and current.left not in seen):
+            queue.append(current.left)
+        if (current.right is not None and current.left not in seen):
+            queue.append(current.right)
+    
+    return -1
 
 
 # Create a BST...
@@ -118,4 +142,4 @@ values = [3,10,1,4,7,20]
 for i in values:
     head.insert(i)
 
-print(dfsStack(head, 10))
+print(bfsStack(head, 10))
