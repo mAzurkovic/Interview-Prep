@@ -1,3 +1,5 @@
+from collections import deque
+
 # Simple Node class
 class Node:
     def __init__(self, value, left, right):
@@ -60,6 +62,49 @@ def find(node, value):
     else:
         return find(node.right, value)
 
+
+
+# This is DFS on a binary tree using a stack DS rather than recursion
+def dfsStack(node, target):
+    seen = set() 
+    stack = deque()
+    stack.append(node)
+
+    while (len(stack) != 0):
+        # Set the current proccesing node to the top of the stack (.pop())
+        current = stack.pop()
+
+        # If not seen, proccess it
+        if (current not in seen):
+            if (current.value == target):
+                return current
+            # Add it to the hashset
+            seen.add(current)
+        
+        # Check the children, if not binary tree and n-art tree, iterate through dynamically
+        # Make sure its not null and not seen before
+        if (current.left is not None and current.left not in seen):
+            stack.append(current.left)
+        if (current.right is not None and current.left not in seen):
+            stack.append(current.right)
+    
+    return -1
+
+
+
+
+seen = set()
+def dfs(node, target):
+    if (node is not None and node not in seen):
+        if (node.value == target):
+            return node
+        seen.add(node)
+        dfs(node.left, target)
+        dfs(node.right, target)
+    else:
+        return -1  
+
+
 # Create a BST...
 #
 #           5
@@ -73,5 +118,4 @@ values = [3,10,1,4,7,20]
 for i in values:
     head.insert(i)
 
-
-print(find(head, 42))
+print(dfsStack(head, 10))
