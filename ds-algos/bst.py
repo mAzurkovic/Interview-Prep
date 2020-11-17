@@ -85,7 +85,7 @@ def dfsStack(node, target):
         # Make sure its not null and not seen before
         if (current.left is not None and current.left not in seen):
             stack.append(current.left)
-        if (current.right is not None and current.left not in seen):
+        if (current.right is not None and current.right not in seen):
             stack.append(current.right)
     
     return -1
@@ -103,7 +103,7 @@ def dfs(node, target):
         return -1  
 
 # This is BFS on a binary tree
-def bfsStack(node, target):
+def bfs(node, target):
     seen = set() 
     queue = deque()
     queue.append(node)
@@ -114,8 +114,9 @@ def bfsStack(node, target):
 
         # If not seen, proccess it
         if (current not in seen):
-            if (current.value == target):
-                return current
+            # if (current.value == target):
+            #     return current
+            print(current.value)
             # Add it to the hashset
             seen.add(current)
         
@@ -123,7 +124,7 @@ def bfsStack(node, target):
         # Make sure its not null and not seen before
         if (current.left is not None and current.left not in seen):
             queue.append(current.left)
-        if (current.right is not None and current.left not in seen):
+        if (current.right is not None and current.right not in seen):
             queue.append(current.right)
     
     return -1
@@ -142,4 +143,4 @@ values = [3,10,1,4,7,20]
 for i in values:
     head.insert(i)
 
-print(bfsStack(head, 10))
+print(bfs(head, 10))

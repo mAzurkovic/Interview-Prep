@@ -24,8 +24,6 @@ class Queue:
         for i in range(0, len(self.queue)):
             print(self.queue[i])
 
-    
-
 q = Queue()
 
 print(q.printQueue())
