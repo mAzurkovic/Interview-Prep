@@ -45,4 +45,11 @@
 * **Step 3**: Check if the current node has been visited (check the hashset), and if not, proccess it
 * **Step 4**: For each child add it to the queue, and loop again
 
+### Merge Sort
+> Time: O(nlogn), Space: O(n)
+* Recursivly split the array up into left and right halves
+* Then merge these halves together in sorted order using another helper function
+
+
+
 
