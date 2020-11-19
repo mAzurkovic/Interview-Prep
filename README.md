@@ -50,6 +50,12 @@
 * Recursivly split the array up into left and right halves
 * Then merge these halves together in sorted order using another helper function
 
+### Kadene's Algorithm
+* Used for finding maximum contiguous subarray
+* Works by tracking current sum of elements up to i
+* If the current element is greater than the current sum, reset the current sum to the value of i
+* Then compare to max sum
+
 
 
 
