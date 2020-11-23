@@ -22,7 +22,7 @@
 - Neurio Firmware Engineer, phone screen
 - Splunk ML Software Engineer, phone screen
 - Microsoft Software Engineer, final interview
-- Amazon Software Engineer, assesment
+- Amazon Software Engineer, assesment (debugging, coding, and now work simulation)
 
 ## Notes
 
