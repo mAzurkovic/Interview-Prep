@@ -7,12 +7,12 @@
 - [ ] Two pointer
 - [ ] Sliding window
 - [x] Linked Lists
-- [ ] Trees
+- [X] Trees
 - [ ] Graphs
-- [ ] DFS anf BFS
-- [ ] Sorting
-- [ ] Searching
-- [ ] Python collections
+- [X] DFS anf BFS
+- [X] Sorting
+- [X] Searching
+- [X] Python collections
 - [x] Stacks/Queues
 
 ## Interviews so far (2020)
@@ -55,6 +55,15 @@
 * Works by tracking current sum of elements up to i
 * If the current element is greater than the current sum, reset the current sum to the value of i
 * Then compare to max sum
+
+### Linux Questions
+* `uname -a`: Check kernel version of system
+* `ifconfig` or `ip addr show <device>`: Check current IP on device (IPv6, ETH0, ...)
+* `df`: Check disk space available on system
+* `service <service-name> <status, start, stop>` or `systemctl <status, start, stop> <service>`: Manage and read services on a system
+* `du -sh <directory>`: Check directory size
+* `netstat -tulpn`: Check open ports on system
+* `ps aux`: Check CPU usage from processes
 
 
 
