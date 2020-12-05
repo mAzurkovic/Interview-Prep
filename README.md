@@ -56,6 +56,14 @@
 * If the current element is greater than the current sum, reset the current sum to the value of i
 * Then compare to max sum
 
+### 4 Pillars of OOP
+1. **Abstraction**: Show only the essential features of an entity - i.e. in the real world, a TV remote only care about the buttons, not the electrical signals being 
+generated and sent
+2. **Encapsulation**: Wrapping up related data and functions together in a class. Can choose what to expose and hold provate (`public`/`private`)
+3. **Inheritance**: Creating a new class based on an existsing class - a child class inherits properties from a parent/super class, also allows for code reuse
+4. **Polymorphism**: A subclass can define its own methods and properties that define its own unique behavior however still share from the parent class. 
+
+
 ### Linux Questions
 * `uname -a`: Check kernel version of system
 * `ifconfig` or `ip addr show <device>`: Check current IP on device (IPv6, ETH0, ...)
