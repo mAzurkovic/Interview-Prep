@@ -63,7 +63,6 @@ generated and sent
 3. **Inheritance**: Creating a new class based on an existsing class - a child class inherits properties from a parent/super class, also allows for code reuse
 4. **Polymorphism**: A subclass can define its own methods and properties that define its own unique behavior however still share from the parent class. 
 
-
 ### Linux Questions
 * `uname -a`: Check kernel version of system
 * `ifconfig` or `ip addr show <device>`: Check current IP on device (IPv6, ETH0, ...)
