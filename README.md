@@ -72,6 +72,14 @@ generated and sent
 * `netstat -tulpn`: Check open ports on system
 * `ps aux`: Check CPU usage from processes
 
-
-
+### Python Questions
+* Why use Python? It is a programming language that has objects, modules, threads, exceptions and memory managment. The befefits of it are it is easy to use, portable, lots of built-in data structures and capabilities
+and has lots of great libraries.
+* PEP 8? It is a Python coding convention and set of reccomendations to make code more readable and standardized.
+* What is a module? A module lets you orginize related code locally (i.e. in the same file).
+* How is it interpreted? It is not compiled into machine code and than ran. Instead it is interpreted into bytecode and ran on the Python specific intepreter (`.pyc` file)
+* How to find bugs in Python? PyChecker is a static tool that lets us see bugs and syntax errors. Also have PyLint to verify that our code follows PEP 8 and VSCode is good.
+* Difference between list and tuple? List is mutable, while tuple is not. We can use tuples for the keys in a hashmap.
+* Arrays vs. lists? They store value in the same way at a low level, however arrays can only store a signle data type.
+* What are the built in types? None, Integer, Float, complex, string, list, set, tuple, dictionary, forzenset, frozendict, file, slice.
 
