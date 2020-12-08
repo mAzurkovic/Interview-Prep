@@ -1,5 +1,4 @@
 class Employee:
-
     raise_amount = 1.04
 
     # This is like the constructor, when methods are created, 
@@ -21,6 +20,14 @@ class Employee:
         self.pay = self.pay * Employee.raise_amount
 
 
+# Boss inherits from Employee class (child class)
+class Boss(Employee):
+
+    def isBoss(self):
+        return True
+
+
+
 # Create instance of employee class
 emp_1 = Employee('Amanda', 'Zurkovic', 10000000)
 print(emp_1.get_name())
@@ -28,3 +35,6 @@ print(emp_1.get_name())
 emp_1.apply_raise()
 
 print(emp_1.pay)
+
+boss = Boss('Tim', 'Cook', 1000000000)
+print(boss.isBoss())
