@@ -82,4 +82,5 @@ and has lots of great libraries.
 * Difference between list and tuple? List is mutable, while tuple is not. We can use tuples for the keys in a hashmap.
 * Arrays vs. lists? They store value in the same way at a low level, however arrays can only store a signle data type.
 * What are the built in types? None, Integer, Float, complex, string, list, set, tuple, dictionary, forzenset, frozendict, file, slice.
+* What is `unittest`? It is the a unit testing framework. It allows for sharing of testing, automation testing, and aggregation of test results into collections.
 
