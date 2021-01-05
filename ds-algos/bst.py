@@ -136,7 +136,6 @@ def bfs(node, target):
 #        3    10
 #       / \   / \
 #      1   4 7  20
-#
 head = Node(5, None, None)
 values = [3,10,1,4,7,20]
 for i in values:

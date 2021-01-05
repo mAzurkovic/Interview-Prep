@@ -45,6 +45,10 @@
 * **Step 3**: Check if the current node has been visited (check the hashset), and if not, proccess it
 * **Step 4**: For each child add it to the queue, and loop again
 
+### Graphs
+* Adjacency List: Store verticies in list and have an adjacency list for each vertex that holds its connected vertecies
+* Adjacency Matrix: An `NxN` matrix - vertecies `i` and `j` are connected if `matrix[i][j] = 1` (or a weight)
+
 ### Merge Sort
 > Time: O(nlogn), Space: O(n)
 * Recursivly split the array up into left and right halves
